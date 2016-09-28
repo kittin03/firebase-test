@@ -1,7 +1,14 @@
 import React from 'react';
 import firebase from 'firebase'
 import './App.css';
-
+var config = {
+  apiKey: "AIzaSyARowe2nvDmzD_4fogahw2uj0RmpVdpKG0",
+  authDomain: "fir-test-cb255.firebaseapp.com",
+  databaseURL: "https://fir-test-cb255.firebaseio.com",
+  storageBucket: "",
+  messagingSenderId: "543274334111"
+};
+firebase.initializeApp(config);
 var TodoList = React.createClass({
   render: function() {
     var _this = this;
