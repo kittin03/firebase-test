@@ -36,7 +36,7 @@ var TodoApp = React.createClass({
         var item = childSnapshot.val();
         item['.key'] = childSnapshot.key;
         items.push(item);
-      }.bind(this));
+      });
 
       this.setState({
         items: items
